@@ -1,0 +1,86 @@
+form {
+  padding-top: 16px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.default-input {
+  border-radius: 6px;
+}
+
+form .sdk-register-btn,
+a.sdk-login-button {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  color: #fff;
+  background-color: #3e78d4;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 16px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+form .sdk-register-btn:hover,
+a.sdk-login-button:hover {
+  background-color: #1f5ec3;
+}
+
+.logo-design {
+  font-size: 26px;
+  text-transform: uppercase;
+  transform: skewX(-14deg);
+  font-weight: 600;
+}
+.logo-design span:first-child {
+  color: #0f172a;
+  position: relative;
+  z-index: 1;
+}
+.logo-design span:first-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -25px;
+  z-index: -1;
+  display: block;
+  width: 190px;
+  height: 100%;
+  clip-path: polygon(14% 0%, 100% 0%, 86% 100%, 0% 100%);
+  background: linear-gradient(
+    138deg,
+    rgba(64, 141, 255, 1) 0%,
+    rgba(122, 181, 255, 1) 50%
+  );
+}
+.logo-design span:last-child {
+  color: rgba(122, 181, 255, 1);
+  margin-left: 10px;
+}
+@media(max-width: 991px) {
+  .logo-design {
+    font-size: 20px;
+  }
+  #primary-menu {
+    margin-left: 10px;
+  }
+  .space-x-8 > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 10px;
+  }
+  .logo-design span:first-child::before {
+    width: 155px;
+  }
+}
+
+@media(max-width: 500px) {
+  .txt-404 {
+    font-size: 18px;
+  }
+  .txt-404 span {
+    font-size: 70px;
+  }
+}
